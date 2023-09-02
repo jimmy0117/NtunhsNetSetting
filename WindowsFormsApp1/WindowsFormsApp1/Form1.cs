@@ -20,11 +20,15 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button2_MouseClick(object sender, MouseEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("請記得需使用管理員身分來執行\n此程式只適用於windows，且完全無惡意用於非營利。\n並開放原始碼於https://hackmd.io/@real7660/SkEX2Svyn，僅供學術使用。\n如果有任何問題可以聯絡112214102@ntunhs.edu.tw", "聲明");
+        }
+        private void button2_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length != 8)
             {
-                MessageBox.Show("HN帳號為八碼請檢查輸入！","提示");
+                MessageBox.Show("HN帳號為八碼請檢查輸入！", "提示");
                 return;
             }
             String info = "rasdial 寬頻連線 " + textBox1.Text + "@hinet.net " + textBox1.Text;
@@ -34,21 +38,28 @@ namespace WindowsFormsApp1
                 writer.Write(info);
                 writer.Close();
                 System.Diagnostics.Process.Start(@"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\NtunhsNetLogin.cmd");
-                MessageBox.Show("設定已經完成");
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("請記得需使用管理員身分來執行\n此程式只適用於windows，且完全無惡意用於非營利。\n並開放原始碼於https://hackmd.io/@real7660/SkEX2Svyn，僅供學術使用。\n如果有任何問題可以聯絡112214102@ntunhs.edu.tw", "聲明");
+            
+            if(checkBox1.Checked == false)
+            {
+                System.IO.File.Delete(@"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\NtunhsNetLogin.cmd");
+            }
+            MessageBox.Show("設定已經完成");
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("請點選寬頻然後直接按建立(不用輸入任何字)");
-                string cmd = "rasphone -a";
+            MessageBox.Show("請點選寬頻然後直接按建立(不用輸入任何字)\n有些電腦等一下會跑出黑色小視窗可以直接關掉");
+                string cmd = "rasphone -a\n\r";
                 System.Diagnostics.Process.Start("CMD.exe","/K " + cmd);
-            
+                
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            System.IO.File.Delete(@"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\NtunhsNetLogin.cmd");
+            MessageBox.Show("已經移除開機自動連接功能");
         }
     }
 }
