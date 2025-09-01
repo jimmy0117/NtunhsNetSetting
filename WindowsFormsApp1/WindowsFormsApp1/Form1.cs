@@ -31,8 +31,19 @@ namespace WindowsFormsApp1
                 MessageBox.Show("HN帳號為八碼請檢查輸入！", "提示");
                 return;
             }
-            String info = "rasdial 寬頻連線 " + textBox1.Text + "@hinet.net " + textBox1.Text;
-            Encoding encoding = Encoding.GetEncoding("big5");
+            String info = "";
+            Encoding encoding = Encoding.UTF8;
+            if (checkBox2.Checked == false)
+            {
+                info = "rasdial 寬頻連線 " + textBox1.Text + "@hinet.net " + textBox1.Text;
+                encoding = Encoding.GetEncoding("big5");
+            }
+            else
+            {
+                info = "chcp 65001\n" + "rasdial \"Broadband Connection\" " + textBox1.Text + "@hinet.net " + textBox1.Text;
+                encoding = Encoding.GetEncoding("utf-8");
+            }
+
             using (StreamWriter writer = new StreamWriter(@"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\NtunhsNetLogin.cmd", false, encoding))
             {
                 writer.Write(info);
@@ -47,10 +58,10 @@ namespace WindowsFormsApp1
             MessageBox.Show("設定已經完成");
             
         }
-
+        //Broadband Connection
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("請點選寬頻然後直接按建立(不用輸入任何字)\n有些電腦等一下會跑出黑色小視窗可以直接關掉");
+            MessageBox.Show("請點選寬頻(Broadband)然後直接按建立(不用輸入任何字)\n有些電腦等一下會跑出黑色小視窗可以直接關掉");
                 string cmd = "rasphone -a\n\r";
                 System.Diagnostics.Process.Start("CMD.exe","/K " + cmd);
                 
@@ -60,6 +71,11 @@ namespace WindowsFormsApp1
         {
             System.IO.File.Delete(@"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\NtunhsNetLogin.cmd");
             MessageBox.Show("已經移除開機自動連接功能");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,16 +1,11 @@
 {
   "Version": 1,
   "ProjectMap": {
-    "65da2f8a-f192-47fc-b90c-740b3e746d7a": {
-      "ProjectGuid": "65da2f8a-f192-47fc-b90c-740b3e746d7a",
-      "DisplayName": "WindowsFormsApp1",
-      "ColorIndex": 0
-    },
     "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "其他檔案",
       "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 0
 }

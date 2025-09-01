@@ -19,3 +19,14 @@ C:\Users\jimmy\OneDrive\桌面\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp
 C:\Users\jimmy\OneDrive\桌面\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\jimmy\OneDrive\桌面\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
 C:\Users\jimmy\OneDrive\桌面\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\jimmy\Source\Repos\jimmy0117\NtunhsNetSetting\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
